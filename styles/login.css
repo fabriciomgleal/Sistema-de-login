@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(45deg, #100720, #31087B, #FA2FB5);
+    animation: cores 15s ease infinite;
+}
+
+div.container {
+    margin-top: 200px;
+    width: 500px;
+    height: 500px;
+}
+
+@keyframes cores {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
