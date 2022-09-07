@@ -10,3 +10,18 @@ function login(){
         alert("Usuario ou senha invalidos!");
     }
 }
+
+function cadastrar(){
+    window.location.href="cadastro.html"
+}
+
+function logar(){
+    let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+    listaUser.push({
+        emailCad: email.value,
+        senhaCad: senha.value
+    }
+    )
+    localStorage.setItem('listaUser', JSON.stringify(listaUser))
+    window.location.href="login.html"
+}
