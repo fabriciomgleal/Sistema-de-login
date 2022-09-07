@@ -9,6 +9,11 @@ div.container {
     height: 500px;
 }
 
+label.form-label {
+    color: #E9ECEF;
+    font-weight: bold;
+}
+
 @keyframes cores {
     0% {
         background-position: 0% 50%;
