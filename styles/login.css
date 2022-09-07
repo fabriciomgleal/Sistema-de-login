@@ -1,6 +1,23 @@
+@keyframes cores {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(45deg, #100720, #31087B, #FA2FB5);
-    animation: cores 15s ease infinite;
+    background-size: 200% 200%;
+    position: relative;
+    animation: cores 10s ease-in-out infinite;
 }
 
 div.container {
@@ -12,16 +29,4 @@ div.container {
 label.form-label {
     color: #E9ECEF;
     font-weight: bold;
-}
-
-@keyframes cores {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }

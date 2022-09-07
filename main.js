@@ -1,1 +1,1 @@
-alert("Insira seu login e senha!")
+alert("Usuario logado com sucesso!")
