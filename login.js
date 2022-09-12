@@ -35,11 +35,11 @@ function logar(){
         senhaCad: senha.value
     }
     )
-/*    localStorage.setItem('listaUser', JSON.stringify(listaUser))
-    window.location.href="login.html"*/
+    localStorage.setItem('listaUser', JSON.stringify(listaUser))
+    window.location.href="login.html"
 }
 
-/*if(localStorage.getItem("chave") == null){
+if(localStorage.getItem("chave") == null){
     window.location.href="login.html"
 }
 
