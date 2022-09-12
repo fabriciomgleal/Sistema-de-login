@@ -39,12 +39,12 @@ function logar(){
     window.location.href="login.html"
 }
 
-if(localStorage.getItem("chave") == null){
+/*if(localStorage.getItem("chave") == null){
     window.location.href="login.html"
-}
+}*/
 
 function sair(){
-    localStorage.removeItem('chave')
+    /*localStorage.removeItem('chave')*/
     window.location.href="login.html"
 
 }
