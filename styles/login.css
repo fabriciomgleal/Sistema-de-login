@@ -31,7 +31,19 @@ label.form-label {
     font-weight: bold;
 }
 
+label#txtview{
+    color: #E9ECEF;
+    font-weight: bold;
+}
+
 h1{
     color: #E9ECEF;
     font-weight: bold;
+}
+
+.fa-eye{
+    position: absolute;
+    top: 328px;
+    right: 460px;
+    cursor: pointer;
 }

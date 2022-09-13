@@ -21,6 +21,7 @@ function login(){
         window.location.href="index.html"
     } else {
         window.location.href="login.html"
+        console.log("Usuario ou senha incorreto")
     }
 }
 
@@ -48,3 +49,25 @@ function sair(){
     window.location.href="login.html"
 
 }
+
+/*
+let viewer = document.querySelector("checkbox")
+function visualizar(){
+    input.addEventListener("senha", view)
+    if("checkbox" == false && "checkbox" == ""){
+        document.getElementById("senha").type = "password";
+    } else {
+        document.getElementById("senha").type = "text";
+    }
+}*/
+
+let viewer = document.querySelector('#view')
+viewer.addEventListener('click', ()=>{
+    let inputSenha = document.querySelector('#senha')
+
+    if(inputSenha.getAttribute('type') == 'password'){
+        inputSenha.setAttribute('type', 'text')
+    } else {
+        inputSenha.setAttribute('type', 'password')
+    }
+})
